@@ -103,7 +103,10 @@ section {
   padding: 24px 0 25px 0;
   position: relative;
 }
-
+.header .link:hover,
+.header .link:focus {
+  color: var(--blue-color);
+}
 .header-flex {
   display: flex;
   align-items: center;
@@ -139,12 +142,7 @@ nav {
   letter-spacing: 0.02em;
   color: var(--text-headers);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--blue-color);
-}
-.site-nav .link:hover::after,
-.site-nav .link:focus::after {
+.site-nav .link:hover::after {
   content: '';
   display: block;
   position: absolute;
@@ -153,7 +151,9 @@ nav {
   height: 4px;
   border-radius: 2px;
   background-color: var(--blue-color);
+  cursor: pointer;
 }
+
 .site-nav .link.current {
   color: var(--blue-color);
 }
@@ -166,6 +166,7 @@ nav {
   height: 4px;
   border-radius: 2px;
   background-color: var(--blue-color);
+  cursor: pointer;
 }
 .site-contact {
   display: flex;
@@ -184,10 +185,12 @@ nav {
   letter-spacing: 0.02em;
   color: var(--text-descr);
 }
+
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
 }
+
 /* Герой  */
 .hero {
   margin-left: auto;
@@ -521,7 +524,7 @@ footer .social-link {
   display: block;
   width: 100%;
 }
-/* ON */
+/* BLUE ICON */
 .work-wrapper {
   position: relative;
 }
