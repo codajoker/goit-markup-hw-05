@@ -469,7 +469,7 @@ footer .social-link {
   border-radius: 4px;
   transition: transform var(--main-duration) var(--timing-function);
 }
-.modal-link {
+.close-button {
   position: absolute;
   top: 8px;
   right: 8px;
